@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ai-agents-cookbooks"
+version = "0.1.0"
+description = ""
+authors = ["Leandro G. Almeida <leandro.g.almeida@gmail.com>"]
+readme = "README.md"
+packages = [{include = "ai_agents_cookbooks"}]
+
+[tool.poetry.dependencies]
+python = "3.11"
+jupyter = "^1.0.0"
+llama-index = "^0.10.15"
+pymilvus = "^2.3.6"
+llama-index-vector-stores-milvus = "^0.1.4"
+llama-index-llms-openai = "^0.1.7"
+llama-index-readers-file = "^0.1.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
