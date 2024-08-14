@@ -163,3 +163,4 @@ cython_debug/
 /volumes
 .DS_Store
 embedEtcd.yaml
+*/storage
