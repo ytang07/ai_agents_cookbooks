@@ -1,0 +1,36 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+    "name": "Oss4AI-dev",
+    // "image": "mcr.microsoft.com/devcontainers/python:1-3.12",
+	// "image": "ghcr.io/devcontainers/base:1",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			"settings": {},
+			"extensions": [
+                "streetsidesoftware.code-spell-checker",
+                "ms-toolsai.jupyter"
+            ]
+		}
+	},
+
+	// "containerEnv": {
+	// 	"PYTHONPATH": "/workspace"
+	// },
+
+    // Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {
+        "ghcr.io/va-h/devcontainers-features/uv:1": {},
+		"ghcr.io/schlich/devcontainer-features/powerlevel10k:1": {},
+		"ghcr.io/devcontainers/features/python:1": {
+            "version": "3.12.1",
+            "additionalVersions": "3.11.9",
+            "installJupyterlab": "true",
+            "configureJupyterlabAllowOrigin": "*",
+            "useOryxIfAvailable": "false"
+		}
+    }
+}
