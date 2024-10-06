@@ -1,0 +1,57 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+    "name": "Oss4AI-dev",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+
+    	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			"settings": {
+				"autoDocstring.docstringFormat": "google",
+                "terminal.integrated.shell.linux": "/bin/zsh"
+			},
+			"extensions": [
+				"codezombiech.gitignore",
+                "DavidAnson.vscode-markdownlint",
+                "donjayamanne.githistory",
+                "donjayamanne.python-environment-manager",
+                "donjayamanne.vscode-default-python-kernel",
+                "eamodio.gitlens",
+                "ionutvmi.path-autocomplete",
+                "marchiore.csvtomarkdown",
+                "mechatroner.rainbow-csv",
+                "ms-python.python",
+                "ms-toolsai.jupyter",
+                "ms-vsliveshare.vsliveshare",
+                "njpwerner.autodocstring",
+                "streetsidesoftware.code-spell-checker",
+            ]
+		}
+	},
+
+    "forwardPorts": [6006],
+
+    // Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {
+        "ghcr.io/va-h/devcontainers-features/uv:1": {},
+		"ghcr.io/devcontainers/features/common-utils:2": {
+            "installZsh": true,
+            "configureZshAsDefaultShell": true,
+            "installOhMyZsh": true,
+            "username": "vscode",
+			"userUid": "1000",
+			"userGid": "1000"
+        },
+		"ghcr.io/devcontainers/features/python:1": {
+            "version": "3.12.1",
+            "installJupyterlab": "true",
+            "configureJupyterlabAllowOrigin": "*",
+            "useOryxIfAvailable": "false"
+		}
+    },
+    "remoteUser": "vscode"
+}
