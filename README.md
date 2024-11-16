@@ -18,7 +18,7 @@ A **development container** is a running container with a well-defined tool/runt
 
 1. Install docker and visual studio code, if you haven't already
 2. Install the [vscode devcontainer extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
-3. Either click [here](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/UserNobody14/ai_agents_cookbooks) to automatically install and open the cookbooks in a new devcontainer, *or* follow the proceeding steps if you want to put them in a more recognizable place.
+3. Either click [here](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/UserNobody14/ai_agents_cookbooks) to automatically install and open the cookbooks in a new devcontainer, *or* follow the steps below if you want to put them in a more recognizable place.
 
 5. Clone this repository onto your local computer
 6. Open up the folder in vscode
